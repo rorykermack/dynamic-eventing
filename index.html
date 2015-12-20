@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Add this meta to your head -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Add this style -->
+    <style>
+      html {
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Test zone -->
+      <button id="btn">Click me!</button>
+    <!-- end test zone -->
+    <script src="./dynamicEvent.js"></script>
+    <script>
+        var btn = document.getElementById('btn');
+        var _dE = dynamicEvent();
+
+        btn.addEventListener(_dE,function() {
+            alert("event is : " + _dE);
+        });
+    </script>
+  </body>
+</html>
